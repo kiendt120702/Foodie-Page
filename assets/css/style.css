@@ -6,69 +6,75 @@
   font-family: "Poppins", sans-serif;
 }
 
-#wrapper {
+.wrapper {
   /* Kích thước màn hình là 1280 x 720 */
   width: 100%;
   height: 100vh;
 }
-#header {
+
+.header {
   width: 100%;
-  padding: 0px 30px;
-  margin-top: 33px;
+  padding: 0px 50px;
+  margin: 25px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  text-align: center;
 }
 
-#menu {
+.menu {
   list-style: none;
   display: flex;
 }
 
-#menu .item {
+.menu .item {
   margin: 0px 25px;
 }
 
-#menu .item a {
-  /* color: #626a67; */
-  color: black;
+.menu .item a {
+  color: #626a67;
+  font-weight: 600;
   text-decoration: none;
 }
 
-#actions {
+.menu .item a:hover {
+  color: black;
+}
+
+.actions {
   display: flex;
 }
 
-#actions .item {
-  margin-left: 22px;
+.actions .item {
+  margin-left: 25px;
 }
 
-#banner {
+.banner {
   width: 100%;
   background-image: url("../img/banner.png");
   height: 463px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   display: flex;
   padding: 0px 133px;
   position: relative;
 }
 
-#banner .box-left,
-#banner .box-right {
+.banner .box-left,
+.banner .box-right {
   width: 50%;
 }
 
-#banner .box-left h2 {
+.banner .box-left h2 {
   font-size: 48px;
   margin-top: 75px;
   color: #fff;
 }
 
-#banner .box-left p {
+.banner .box-left p {
   color: #d0d0d0;
 }
 
-#banner .box-left button {
+.banner .box-left button {
   width: 191px;
   height: 40px;
   margin-top: 41px;
@@ -81,26 +87,26 @@
   transition: 0.4s;
 }
 
-#banner .box-left button:hover {
+.banner .box-left button:hover {
   background: orange;
 }
 
-#banner .box-right {
+.banner .box-right {
   padding-left: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#banner .box-right img {
+.banner .box-right img {
   margin: 0px 10px;
   animation: animation 3s infinite linear;
 }
 
-#banner .box-right img:nth-child(1) {
+.banner .box-right img:nth-child(1) {
   animation-delay: 0.5s;
 }
-#banner .box-right img:nth-child(2) {
+.banner .box-right img:nth-child(2) {
   animation-delay: 1s;
 }
 
